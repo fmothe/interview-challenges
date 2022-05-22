@@ -23,4 +23,9 @@ export default {
         ]);
       }, 1000),
     ),
+  // delete: (item: Item): Promise<Item[]> =>
+  //     new Promise((resolve) => 
+  //       setTimeout(() => {
+  //         resolve();
+  //     }),
 };
