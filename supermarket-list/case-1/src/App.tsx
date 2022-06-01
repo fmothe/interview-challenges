@@ -20,6 +20,18 @@ function App() {
 
   function handleAdd(event: React.ChangeEvent<Form>) {
     // Should implement
+    event.preventDefault();
+
+    setItems([
+      ...items,
+      {
+        id: +new Date(),
+        text: event.target.text.value,
+        completed: false,
+      },
+    ]);
+
+    event.target.text.value = "";
   }
 
   function handleRemove(id: Item["id"]) {
